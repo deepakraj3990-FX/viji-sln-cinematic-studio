@@ -1,0 +1,18 @@
+{
+    "name": "lokesh-photography",
+    "version": "1.0.0",
+    "description": "Lokesh Photography - Premium Photography Portfolio",
+    "scripts": {
+        "serve": "npx serve -s . -l 3000",
+        "build": "npm run optimize && npm run minify-css && npm run minify-js",
+        "optimize": "node optimize-images.js",
+        "minify-css": "echo CSS already minified in styles/main.min.css",
+        "minify-js": "echo JS already minified in scripts/main.min.js",
+        "deploy-prep": "echo Production files ready: index.prod.html, styles/main.min.css, scripts/main.min.js"
+    },
+    "author": "Lokesh Photography",
+    "license": "ISC",
+    "devDependencies": {
+        "sharp": "^0.33.0"
+    }
+}
